@@ -1,0 +1,56 @@
+ /* reset css */ 
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    min-height: 100vh;
+    color: white;
+}
+.container{
+    max-width: 1200px;
+    margin:  0 auto;
+    padding: 20px;
+}
+header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+}
+.logo{
+    font-size: 40px;
+    font-weight: 600;
+    background: #b3175a;
+    background: linear-gradient(nulldeg,rgba(179, 23, 90, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.logo{
+    left: 20px;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.button{
+    background-color: #dc4184;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+}
