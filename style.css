@@ -15,6 +15,8 @@ body{
     margin:  0 auto;
     padding: 20px;
 }
+
+/* ================================== Header ================================*/
 header{
  display: flex;
  justify-content: space-between;
@@ -24,13 +26,10 @@ header{
 .logo{
     font-size: 40px;
     font-weight: 600;
-    background: #b3175a;
-    background: linear-gradient(nulldeg,rgba(179, 23, 90, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: #3F5EFB;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
     background-clip: text;
     color: transparent;
-}
-
-.logo{
     left: 20px;
 }
 
@@ -53,4 +52,70 @@ nav ul li a {
     padding: 10px 15px;
     border: none;
     outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* =========================== Main ====================================== */
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content h1{
+    font-size: 65px;
+}
+
+.content h1 span{
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.content p:first-of-type{
+    color: rgb(135, 95, 190);
+    font-size: 35px;
+}
+
+.content p:nth-of-type(2){
+    color: rgb(243, 241, 247);
+    font-size: 20px;
+}
+
+.readMore{
+    background: transparent;
+    border: 2px solid #dc4184;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.star:hover{
+    transform: translateY(-3px);
+    box-shadow: -1px 9px 12px 0 rgb(184, 63, 115,0.6);
+}
+
+/* pseudo */
+.readMore::before{
+    content: "";
+    position: absolute;
+    background: #dc4184;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.readMore:hover::before{
+    width: 100%;
 }
