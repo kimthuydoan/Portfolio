@@ -119,3 +119,12 @@ main{
 .readMore:hover::before{
     width: 100%;
 }
+
+/* Features card */
+.features{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
