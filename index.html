@@ -22,6 +22,7 @@
 <body>
     <!-- Crtl + shift + p -->
      <!-- wrap with ... -->
+    <div id="particles-js"></div>
     <div class="container">
         <header >
             <div class="logo">KIMTHUY</div>
@@ -92,6 +93,55 @@
             <div class="shape shape3"></div>
             <div class="shape shape4"></div>
         </div>
+
+         <footer class="animate__animated animate__fadeInUp">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p>© 2025 UI Beginner's. All rights reserved.</p>
+        </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+    // Khởi tạo particles.js ngay lập tức
+    particlesJS('particles-js', {
+        particles: {
+            number: {
+                value: 80, // Tăng số lượng hạt để dễ nhìn hơn
+                density: { enable: true, value_area: 800 }
+            },
+            color: { value: '#9932CC' }, // Màu tím
+            shape: { type: 'circle' },
+            opacity: { value: 0.8, random: true }, // Tăng độ trong suốt
+            size: { value: 3, random: true },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: '#9932CC', // Màu đường nối
+                opacity: 0.4, // Tăng độ trong suốt của đường nối
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 2,
+                direction: 'none',
+                random: true,
+                straight: false,
+                out_mode: 'out'
+            }
+        },
+        interactivity: {
+            events: {
+                onhover: { enable: true, mode: 'repulse' },
+                onclick: { enable: true, mode: 'push' },
+                resize: true
+            }
+        },
+        retina_detect: true
+    });
+</script>
 </body>
 </html>
