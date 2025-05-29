@@ -543,4 +543,79 @@ footer {
         height: 350px;
     }
 
+    .typing-text {
+        font-size: 36px;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 40px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+    .button_wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+    .button_wrapper button{
+        width: 100%;
+        gap: 100px;
+    }
+
 }
+/* 
+/* Landscape orientation adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+    main {
+        margin-top: 20px;
+    }
+
+    .typing-text {
+        font-size: 36px;
+        margin-bottom: 5px;
+    }
+
+    .subtext {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+
+    .description {
+        margin-bottom: 15px;
+    }
+
+    .buttons {
+        margin-top: 15px;
+    }
+
+    .feature {
+        padding: 15px;
+    }
+
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .features {
+        margin-top: 20px;
+    }
+
+    .image-container {
+        max-height: 60vh;
+        overflow: hidden;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+} 
