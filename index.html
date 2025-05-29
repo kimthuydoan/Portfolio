@@ -18,7 +18,10 @@
     <link rel="stylesheet" href="./style.css">
     <!-- Import library cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <!-- Font chu -->
+    </head><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaini&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <body>
     <!-- Crtl + shift + p -->
      <!-- wrap with ... -->
@@ -47,6 +50,8 @@
                 <button class="button">Contact me
                     <i class="fa-solid fa-address-card"></i>
                 </button>
+                <!-- Only show when the screen is 900px -->
+                <div class="bar"><i class="fa-solid fa-bars"></i></div>
             </div>
         
            </header>
@@ -104,44 +109,7 @@
             <p>© 2025 UI Beginner's. All rights reserved.</p>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-    // Khởi tạo particles.js ngay lập tức
-    particlesJS('particles-js', {
-        particles: {
-            number: {
-                value: 80, // Tăng số lượng hạt để dễ nhìn hơn
-                density: { enable: true, value_area: 800 }
-            },
-            color: { value: '#9932CC' }, // Màu tím
-            shape: { type: 'circle' },
-            opacity: { value: 0.8, random: true }, // Tăng độ trong suốt
-            size: { value: 3, random: true },
-            line_linked: {
-                enable: true,
-                distance: 150,
-                color: '#9932CC', // Màu đường nối
-                opacity: 0.4, // Tăng độ trong suốt của đường nối
-                width: 1
-            },
-            move: {
-                enable: true,
-                speed: 2,
-                direction: 'none',
-                random: true,
-                straight: false,
-                out_mode: 'out'
-            }
-        },
-        interactivity: {
-            events: {
-                onhover: { enable: true, mode: 'repulse' },
-                onclick: { enable: true, mode: 'push' },
-                resize: true
-            }
-        },
-        retina_detect: true
-    });
-</script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
